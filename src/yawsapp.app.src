@@ -1,0 +1,13 @@
+{application, yawsapp,
+ [{description, "An embedded yaws application example."},
+  {vsn, %VSN%},
+  {modules, [%MODULES%]},
+  {registered, [yawsapp]},
+  {env, [
+    {port, 8006},
+    {working_dir, "%WORKING_DIR%"},
+    {docroot, "%WORKING_DIR%/priv/docroot"}
+  ]},
+  {applications, [kernel, stdlib, sasl]},
+  {mod, {yawsapp, []}}
+ ]}.

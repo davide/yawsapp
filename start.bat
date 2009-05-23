@@ -1,0 +1,3 @@
+rake run
+pause
+pause
